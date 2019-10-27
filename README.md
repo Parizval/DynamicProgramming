@@ -1,1 +1,4 @@
-"# Dynamic Programming" 
+# Dynamic Programming
+
+## Definition
+
