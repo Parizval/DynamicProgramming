@@ -23,4 +23,4 @@ class FibonacciSeries:
             return self.NaiveApproach(n-1) + self.NaiveApproach(n-2)
 
 Fib = FibonacciSeries()
-print(Fib.NaiveApproach(100))
+print(Fib.FibonacciMemory(100))
