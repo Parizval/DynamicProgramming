@@ -1,3 +1,5 @@
+import math
+
 class FibonacciSeries:
 
     def __init__(self):
@@ -21,6 +23,12 @@ class FibonacciSeries:
         if n == 0 or n == 1 : return n 
         else : 
             return self.NaiveApproach(n-1) + self.NaiveApproach(n-2)
+
+    def ConstantTime(self,n):
+        phi = (1 +  math.sqrt(5))/2
+        return round(phi**n/math.sqrt(5))
+
+
 
 Fib = FibonacciSeries()
 print(Fib.FibonacciMemory(100))
